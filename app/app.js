@@ -30,7 +30,7 @@ function addDivController() {
   const backgroundColor = `${colorInput.value}`;
   const divMargin = `${marginInput.value}px`;
 
-  if ([divHeight, divWidth.divMargin].some((inp) => inp === "px")) {
+  if ([divHeight, divWidth.divMargin].some((inp) => inp === "px" || inp === "0px")) {
     alert("butun deyerleri daxil edin");
   } else {
     addUIContainerContent(divWidth, divHeight, backgroundColor, divMargin);
@@ -72,7 +72,7 @@ function deleteDivController() {
 
 function copyContentController() {
 
-  if ([divHeight, divWidth.divMargin].some((inp) => inp === "px")) {
+  if ([divHeight, divWidth.divMargin].some((inp) => inp === "px" || inp === "0px")) {
     alert("kopyalanacaq deyer movcud deyil");
   } else {
     output.innerHTML = `<code>${getComputedStyle(flexPlayground)}</code>`
