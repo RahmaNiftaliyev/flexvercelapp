@@ -75,7 +75,7 @@ function copyContentController() {
   if ([divHeight, divWidth.divMargin].some((inp) => inp === "px")) {
     alert("kopyalanacaq deyer movcud deyil");
   } else {
-
+    output.innerHTML = `<code>${getComputedStyle(flexPlayground)}</code>`
   }
 
 }
