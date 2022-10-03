@@ -1,95 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="container-grid">
-      <div class="toolbar-section">
-        <h1>FLEX GENERATOR</h1>
-        <div class="create-delete-division-container">
-          <div>
-            <input
-              type="number"
-              placeholder="width"
-              min="0"
-              step="10"
-              max="1026"
-              id="width"
-            />
-            <input
-              type="number"
-              placeholder="height"
-              min="0"
-              step="10"
-              max="840"
-              id="height"
-            />
 
-            <div class="form-group">
-              <label for="color">background-color</label>
-              <input type="color" id="color" />
-            </div>
-            <input type="number" id="margin" placeholder="margin" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="container-grid">
+    <div class="toolbar-section">
+      <h1>FLEX GENERATOR</h1>
+      <div class="create-delete-division-container">
+        <div>
+          <input type="number" placeholder="width" min="0" step="10" max="1026" id="width" />
+          <input type="number" placeholder="height" min="0" step="10" max="840" id="height" />
+
+          <div class="form-group">
+            <label for="color">background-color</label>
+            <input type="color" id="color" />
           </div>
-          <button id="add-div-button">Add div</button>
-          <button id="delete-div-button">Delete div</button>
+          <input type="number" id="margin" placeholder="margin" />
         </div>
-        <div class="playground-section">
-          <div>
-            <select name="" id="" class="flex-properties">
-              <option value="" selected="selected">flex-wrap</option>
-              <option value="wrap">wrap</option>
-              <option value="nowrap">no-wrap</option>
-              <option value="wrap-reverse">wrap-reverse</option>
-            </select>
-            <select name="" id="" class="flex-properties">
-              <option value="" selected="selected">flex-direction</option>
-              <option value="row">row</option>
-              <option value="row-reverse">row-reverse</option>
-              <option value="column">column</option>
-              <option value="column-reverse">column-reverse</option>
-            </select>
-          </div>
-          <div>
-            <select name="" id="" class="flex-properties">
-              <option value="" selected="selected">align-items</option>
-              <option value="flex-start">flex-start</option>
-              <option value="center">center</option>
-              <option value="flex-end">flex-end</option>
-            </select>
-            <select name="" id="" class="flex-properties">
-              <option value="" selected="selected">justify-content</option>
-              <option value="flex-start">flex-start</option>
-              <option value="center">center</option>
-              <option value="flex-end">flex-end</option>
-              <option value="space-around">space-around</option>
-              <option value="space-between">space-between</option>
-            </select>
-          </div>
-          <div>
-            <select name="" id="" class="flex-properties">
-              <option value="" selected="selected">align-content</option>
-              <option value="flex-start">flex-start</option>
-              <option value="center">center</option>
-              <option value="flex-end">flex-end</option>
-              <option value="space-around">space-around</option>
-              <option value="space-between">space-between</option>
-            </select>
-
-          </div>
+        <button id="add-div-button">Add div</button>
+        <button id="delete-div-button">Delete div</button>
+      </div>
+      <div class="playground-section">
+        <div>
+          <select name="" id="" class="flex-properties">
+            <option value="" selected="selected">flex-wrap</option>
+            <option value="wrap">wrap</option>
+            <option value="nowrap">no-wrap</option>
+            <option value="wrap-reverse">wrap-reverse</option>
+          </select>
+          <select name="" id="" class="flex-properties">
+            <option value="" selected="selected">flex-direction</option>
+            <option value="row">row</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column">column</option>
+            <option value="column-reverse">column-reverse</option>
+          </select>
+        </div>
+        <div>
+          <select name="" id="" class="flex-properties">
+            <option value="" selected="selected">align-items</option>
+            <option value="flex-start">flex-start</option>
+            <option value="center">center</option>
+            <option value="flex-end">flex-end</option>
+          </select>
+          <select name="" id="" class="flex-properties">
+            <option value="" selected="selected">justify-content</option>
+            <option value="flex-start">flex-start</option>
+            <option value="center">center</option>
+            <option value="flex-end">flex-end</option>
+            <option value="space-around">space-around</option>
+            <option value="space-between">space-between</option>
+          </select>
+        </div>
+        <div>
+          <select name="" id="" class="flex-properties">
+            <option value="" selected="selected">align-content</option>
+            <option value="flex-start">flex-start</option>
+            <option value="center">center</option>
+            <option value="flex-end">flex-end</option>
+            <option value="space-around">space-around</option>
+            <option value="space-between">space-between</option>
+          </select>
         </div>
       </div>
-      <div class="flex-playground" id="flex-playground">
+      <div class="code-output">
 
       </div>
     </div>
+    <div class="flex-playground" id="flex-playground">
 
-    <script src="./app/boxGenerator.js"></script>
-    <script src="./app/app.js"></script>
-  </body>
+    </div>
+  </div>
+
+  <script src="./app/boxGenerator.js"></script>
+  <script src="./app/app.js"></script>
+</body>
+
 </html>
