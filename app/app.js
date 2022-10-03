@@ -5,6 +5,8 @@ const heightInput = document.getElementById("height");
 const colorInput = document.getElementById("color");
 const marginInput = document.getElementById("margin");
 const flexPlayground = document.getElementById("flex-playground");
+const output = document.getElementById("code-output");
+const copyButton = document.getElementById("copy-button");
 const flexSelectBoxes = Array.from(
   document.querySelectorAll(".flex-properties")
 );
@@ -16,6 +18,7 @@ eventListeners();
 function eventListeners() {
   addButton.addEventListener("click", addDivController);
   deleteButton.addEventListener("click", deleteDivController);
+  copyButton.addEventListener("click", copyContentController);
   flexSelectBoxes.forEach((select) => {
     select.addEventListener("change", flexPropertiesChangerController);
   });
@@ -65,4 +68,14 @@ function deleteDivController() {
   } else {
     alert("silinecek div qalmayib");
   }
+}
+
+function copyContentController() {
+
+  if ([divHeight, divWidth.divMargin].some((inp) => inp === "px")) {
+    alert("kopyalanacaq deyer movcud deyil");
+  } else {
+
+  }
+
 }
