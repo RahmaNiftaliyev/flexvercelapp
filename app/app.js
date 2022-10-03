@@ -12,6 +12,7 @@ const flexSelectBoxes = Array.from(
 );
 
 let cssObject = {};
+let cssObject2 = {};
 
 eventListeners();
 
@@ -79,7 +80,16 @@ function copyContentController() {
   if ([divHeight, divWidth.divMargin].some((inp) => inp === "px" || inp === "0px")) {
     alert("kopyalanacaq deyer movcud deyil");
   } else {
-    output.innerHTML = `<code>${getComputedStyle(flexPlayground)}</code>`
+    cssObj = getComputedStyle(flexPlayground, null);
+    for (let x in cssObj) {
+      output.innerHTML = `
+
+        {
+         <code>${`${x}:${cssObj[x]}`}</code>
+        }
+
+        `
+    }
   }
 
 }
