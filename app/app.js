@@ -72,6 +72,10 @@ function deleteDivController() {
 
 function copyContentController() {
 
+  const divWidth = `${widthInput.value.trim()}px`;
+  const divHeight = `${heightInput.value.trim()}px`;
+  const divMargin = `${marginInput.value}px`;
+
   if ([divHeight, divWidth.divMargin].some((inp) => inp === "px" || inp === "0px")) {
     alert("kopyalanacaq deyer movcud deyil");
   } else {
