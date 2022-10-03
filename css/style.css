@@ -32,7 +32,7 @@ body {
   grid-gap: 3px;
 }
 
-.container-grid > div {
+.container-grid>div {
   border: 1px solid black;
 }
 
@@ -52,7 +52,7 @@ body {
   flex-direction: column;
 }
 
-.create-delete-division-container > button {
+.create-delete-division-container>button {
   background-color: #383d47;
   color: white;
   padding: 6px 0;
@@ -62,12 +62,12 @@ body {
   border-radius: 6px;
 }
 
-.create-delete-division-container > div:first-child {
+.create-delete-division-container>div:first-child {
   display: flex;
   flex-direction: column;
 }
 
-.create-delete-division-container > div:first-child > input {
+.create-delete-division-container>div:first-child>input {
   margin: 5px 0;
   padding: 10px;
   border-radius: 6px;
@@ -80,12 +80,12 @@ body {
   width: 100%;
 }
 
-.playground-section > div {
+.playground-section>div {
   width: 100%;
   display: flex;
 }
 
-.playground-section > div > select {
+.playground-section>div>select {
   width: 50%;
   padding: 10px;
   border: 1px outset black !important;
@@ -94,27 +94,27 @@ body {
 }
 
 .form-group {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.form-group > label {
-    display: inline-block;
-    background-color: #fff;
-    padding: 6px 15px;
-    color: black;
-    margin:0 10px 10px 0;
-    border-radius:6px ;
+.form-group>label {
+  display: inline-block;
+  background-color: #fff;
+  padding: 6px 15px;
+  color: black;
+  margin: 0 10px 10px 0;
+  border-radius: 6px;
 }
 
 
-.form-group > input {
-    height: 23px;
+.form-group>input {
+  height: 23px;
 }
 
 .flex-playground {
-    background-color: green;
-    display: flex;
-    width: 100%;
-    overflow: hidden;
+  background-color: #383d47;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
 }
