@@ -12,4 +12,4 @@ source_code:
   includes: []
   encoding: "UTF-8"
   line_ending: "UNKNOWN"
-languages: []
+languages: ['html','css','javascript']
